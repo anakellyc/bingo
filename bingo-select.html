@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="bingo.css">
+  <title>Ana's Bingo</title>
+</head>
+<body>
+  <div class="container">
+    <div class="welcome-background">
+    <div class="heading-box">
+      <p class="welcome animated jackInTheBox">
+        Welcome to Ana's Bingo!
+      </p> 
+    </div>
+    <div class="select-box">
+      <input type="button" class="btn btn-primary btn-lg"
+      data-toggle="modal" data-target="#myModal1" value="1 &nbsp;&nbsp; Player">
+      <input type="button" class="btn btn-primary btn-lg"
+      data-toggle="modal" data-target="#myModal2" value="2 Players">
+
+      <!-- Modal 1 -->
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+              <!--  MODAL HEADER -->
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                
+              </div>
+        
+              <!--  MODAL BODY -->
+              <div class="modal-body">
+                  <div class="form-group">
+                    <label for="name">Player Name</label>
+                    <input type="text" class="form-control" id="1player">
+                  </div>
+                  <div>
+                      <label for="avatar">Select your Avatar</label>
+                      <div class="avatars">
+                      <img class="kim" src="Cinema Final/Kim Kardashian 2.png">
+                      <img class="jason" src="Cinema Final/Jason Voorhees.png">
+                      <img class="steve" src="Cinema Final/Steve Jobs.png">
+                      <img class="et" src="Cinema Final/Grey.png">
+                    </div>
+                  </div>
+              </div>
+        
+              <!--  MODAL FOOTER -->
+              <div class="modal-footer">
+                <button onclick="location.href='../bingo/bingo.html';" class="btn btn-default start-game" data-dismiss="modal">Go to game</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+     <!-- Modal 2 -->
+     <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <!--  MODAL HEADER -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              
+            </div>
+      
+            <!--  MODAL BODY -->
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="name">Player 1 Name</label>
+                <input type="text" class="form-control" id="player1">
+              </div>
+              <div>
+                <label for="avatar">Select your Avatar</label>
+                <div class="avatars">
+                  <img class="kim" src="Cinema Final/Kim Kardashian 2.png">
+                  <img class="jason" src="Cinema Final/Jason Voorhees.png">
+                  <img class="steve" src="Cinema Final/Steve Jobs.png">
+                  <img class="et" src="Cinema Final/Grey.png">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Player 2 Name</label>
+                <input type="text" class="form-control" id="player2">
+              </div>
+              <div>
+                  <label for="avatar">Select your Avatar</label>
+                  <div class="avatars2">
+                    <img class="kim2" src="Cinema Final/Kim Kardashian 2.png">
+                    <img class="jason2" src="Cinema Final/Jason Voorhees.png">
+                    <img class="steve2" src="Cinema Final/Steve Jobs.png">
+                    <img class="et2" src="Cinema Final/Grey.png">
+                  </div>
+                </div>
+            </div>
+      
+            <!--  MODAL FOOTER -->
+            <div class="modal-footer"></div>
+              <button onclick="location.href='../bingo/bingo.html';" type="button" class="btn btn-default start-game" data-dismiss="modal">Go to game</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="bingo.js"></script>
+</body>
+</html>

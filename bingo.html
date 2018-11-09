@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="bingo.css">
+  <link rel="stylesheet" href="animate.css">
+  <title>Ana's Bingo</title>
+</head>
+<body>
+  
+    <nav>
+        <form>
+            <button class="start" type="button">Start Game</button>
+            <button onclick="location.href='../bingo/bingo-select.html'" id="return" type="button">Menu</button>
+        </form>
+        <div class="speaker">
+        <audio id="player">
+            <source src="../bingo/audio_hero_Yessir_SIPML_K-0329.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+          </div>
+    </nav>
+
+    <header class="active">
+      <img class="logo" src="images/bingo-images-clipart-3 copy.png" alt="Bingo logo">
+      <div class="container pregame">
+        <div class="pregamePart1">
+          <p class="text-container">player1</p>
+          <p class="small-btn">X</p>
+          <p class="text-container">player2</p>
+        </div>
+        <div class="align-btn">
+        <button class="start change-btn" type="button">Start Game</button>  
+        </div>
+      </div>
+    </header>
+
+  <div class="game">
+    <div class="small-container">
+      <p id="current-number"><span class="ballstart">Click Start Button</span></p>
+    </div>
+
+    <div id="board" class="small-container">
+    
+    </div>
+
+  </div>
+
+  <div class="imagesCtn avatars" hidden>
+      <img class="kim" src="avatars/Kim Kardashian 2.png">
+      <img class="jason" src="avatars/Jason Voorhees.png">
+      <img class="steve" src="avatars/Steve Jobs.png">
+      <img class="et" src="avatars/Grey.png">
+      <img class="kim2" src="avatars/Kim Kardashian 2.png">
+      <img class="jason2" src="avatars/Jason Voorhees.png">
+      <img class="steve2" src="avatars/Steve Jobs.png">
+      <img class="et2" src="avatars/Grey.png">
+      <img class="grandma1" src="avatars/nana.png">
+  </div>
+
+  <div class="cards-area">
+    <div id="card">
+        
+  
+    </div>
+  </div>
+
+  
+  <!-- Modal 1 -->
+
+  <input id="triggerLine" type="button" class="btn btn-primary btn-lg"
+      data-toggle="modal" data-target="#modalLine">
+
+  <div class="modal fade" id="modalLine" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+          <!--  MODAL HEADER -->
+          <div class="modal-header">
+            <button id="closeModal" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            
+          </div>
+    
+          <!--  MODAL BODY -->
+          <div class="modal-body style-alert">
+            <p class="alert animated pulse">placeholder</p>
+            <img id="nanaphoto" src="../bingo/images/Grandma-750x400.jpg" alt="Grandma">
+          </div>
+          </div>
+          </div>
+          </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="bingo.js"></script>
+</body>
+</html>
